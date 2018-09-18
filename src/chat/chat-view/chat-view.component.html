@@ -1,0 +1,10 @@
+<p>
+  chat-view works {{name}}!
+</p>
+<h2 *ngIf="name === 'srinivas'">Yes, it's me </h2>
+<div>
+  <ul>
+   <li *ngFor="let room of chatRooms"> {{room | lowercase}} </li> 
+  </ul>
+</div>
+
