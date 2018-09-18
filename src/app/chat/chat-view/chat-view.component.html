@@ -4,8 +4,17 @@
 <h2 *ngIf="name === 'srinivas'">Yes, it's me </h2>
 <div>
   <ul>
-   <li *ngFor="let room of chatRooms"> {{room | lowercase}} </li> 
+    <li *ngFor="let room of chatRooms">
+      {{room | lowercase}}
+      <button class="btn btn-danger" (click)="onRemoveChatRoom(room)"> Del </button>
+    </li>
   </ul>
 </div>
-<button class="btn btn-success" (click)="onRemoveChatRoom()"> Remove </button>
-
+<div>
+  <input type="text" class="form-control" #roomInput placeholder="Enter what you want to remove">
+  <button class="btn btn-success" (click)="onRemoveChatRoom(roomInput.value)"> Remove </button>
+</div>
+<div>
+  <input type="text" class="form-control" #roomInput1 placeholder="Enter what you want to input">
+  <button class="btn btn-success" (click)="onAddChatRoom(roomInput1.value)"> Add </button>
+</div>
