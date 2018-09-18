@@ -7,6 +7,6 @@ import { ChatViewComponent } from './chat-view/chat-view.component';
     CommonModule
   ],
   declarations: [ChatViewComponent],
-  exports:[ ChatViewComponent]
+  exports: [ChatViewComponent]
 })
 export class ChatModule { }
