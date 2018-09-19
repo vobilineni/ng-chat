@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  getChatMessage: 'https://us-central1-pka-forms-fef14.cloudfunctions.net/getMessages'
 };
 
 /*

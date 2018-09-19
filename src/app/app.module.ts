@@ -12,7 +12,6 @@ const routes: Routes = [
   { path: 'chat', component: ChatViewComponent }
 ];
 
-
 @NgModule({
   declarations: [
     AppComponent

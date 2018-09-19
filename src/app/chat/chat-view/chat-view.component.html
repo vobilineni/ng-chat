@@ -5,10 +5,15 @@
 <div>
   <ul>
     <li *ngFor="let room of chatRooms">
-      {{room | lowercase}}
+      {{room | uppercase}}
       <button class="btn btn-danger" (click)="onRemoveChatRoom(room)"> Del </button>
     </li>
   </ul>
+</div>
+<div *ngFor="let message of chatMessages" style=text-align:left>
+  <h3> {{ message.screenName }}</h3>
+  <p>{{message.message}}</p>
+  <!-- {{messages | uppercase}} -->
 </div>
 <div>
   <input type="text" class="form-control" #roomInput placeholder="Enter what you want to remove">
