@@ -15,4 +15,4 @@ const myChat: ChatMessage = {
 const myChat2: ChatMessage = {
     chatRoom: 'room'
 };
-const totalObj: ChatMessage = {...myChat, chatRoom: myChat2.chatRoom};
+const totalObj: ChatMessage = { ...myChat, chatRoom: myChat2.chatRoom };
